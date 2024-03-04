@@ -1,0 +1,12 @@
+.kushita-kallapu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    padding-left:100px;
+    padding-bottom:100px;
+    padding-top:100px;
+}
+.common-kushita{
+    margin:20px;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Url from '../../config'
+import './index.css'
 
 class Home extends Component {
     state = {
@@ -12,6 +13,7 @@ class Home extends Component {
 
     getData=async()=>{
         const url=`${Url}/movies/`;
+        //const url="http://localhost:3001/movies/"
         const options={
             method:"GET"
         }
@@ -27,11 +29,14 @@ class Home extends Component {
         return(
             <div>
                 <h1>Home</h1>
-                <ul>
+                <button type='button' ><a href="/kushita/" className='button-link'>kushita kallapu</a></button>
+                <ul className='movies-list'>
                     {data.map(each=>(
-                        <li key={each.id}>
+                        <li key={each.id} className='each-movie'>
+                            <p>{each.id}</p>
                             <a href={each.url}>{each.movieName}</a> 
                             <p>{each.cast}</p>
+
                         </li>
                     ))}
                 </ul>

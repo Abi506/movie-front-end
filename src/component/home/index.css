@@ -1,0 +1,14 @@
+.movies-list{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.each-movie{
+    margin:20px;
+    min-width:130px;
+}
+.button-link{
+    text-decoration: none;
+    color:black;
+}
