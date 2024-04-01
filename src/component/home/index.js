@@ -30,6 +30,7 @@ class Home extends Component {
             <div>
                 <h1>Home</h1>
                 <button type='button' ><a href="/kushita/" className='button-link'>kushita kallapu</a></button>
+                <button type='button' ><a href="/sangya-mishra/" className='button-link'>Sangya Mishra</a></button>
                 <ul className='movies-list'>
                     {data.map(each=>(
                         <li key={each.id} className='each-movie'>
